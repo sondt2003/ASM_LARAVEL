@@ -15,15 +15,17 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('id_category');
-            $table->foreign('id_category')->references('id')->on('category')->onDelete('cascade');
 
-            $table->unsignedBigInteger('id_sale');
-            $table->foreign('id_sale')->references('id')->on('sale')->onDelete('cascade');
+            // $table->unsignedBigInteger('id_sale');
 
             $table->integer('price');
             $table->string('image');
             $table->string('description');
             $table->timestamps();
+            
+            $table->foreign('id_category')->references('id')->on('category');
+            // $table->foreign('id_sale')->references('id')->on('sale');
+
         });
     }
 
@@ -32,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('product');
     }
 };
