@@ -8,28 +8,31 @@
 <body>
 
 <!-- Menu -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<div class="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/login">Login</a>
+    <a class="navbar-brand" href="http://127.0.0.1:8000/register">Register</a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    </button> -->
+    <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Trang chủ</a>
+                <a class="nav-link" href="http://127.0.0.1:8000/product">Sản phầm</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Giới thiệu</a>
+                <a class="nav-link" href="http://127.0.0.1:8000/banner">Banner</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Dịch vụ</a>
+                <a class="nav-link" href="http://127.0.0.1:8000/category">Danh mục</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Liên hệ</a>
+                <a class="nav-link" href="http://127.0.0.1:8000/sale">Sale</a>
             </li>
         </ul>
     </div>
 </nav>
+</div>
 
 <!-- Nội dung -->
 <div class="container mt-4">

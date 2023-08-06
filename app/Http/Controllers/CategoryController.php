@@ -11,18 +11,8 @@ use Storage;
 class CategoryController extends Controller
 {
     public function category(Request $request){
-        $max=20;
-        if($request->query('page')&& $request->query('page')>0){
-            $limit=$request->query('page')*$max;
-            $skip=$limit-$max;
-        } else{
-            $limit=1*$max;
-            $skip=$limit-$max;
-        }
         $name = 'listCategory';
         $category = DB::table('category')
-        ->skip($skip)
-        ->limit($limit)
         ->whereNull('deleted_at')
         ->get();
         return view('category.index',compact('name','category'));

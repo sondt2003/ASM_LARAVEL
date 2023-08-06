@@ -6,6 +6,7 @@
         <label for="exampleFormControlTextarea1" class="form-label">Name</label>
         <input type="text" name="name" class="form-control">
     </div>
+    
         <div class="form-group">
             <label class="col-md-3 col-sm-4 control-label">Ảnh </label>
             <div class="input-group mb-3">

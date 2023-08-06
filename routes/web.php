@@ -29,3 +29,13 @@ Route::get('/banner',[App\Http\Controllers\BannerController::class,'banner'])->n
 Route::match(['GET','POST'],'/banner/add',[App\Http\Controllers\BannerController::class,'add'])->name('route_banner_add');
 Route::match(['GET','POST'],'/banner/edit/{id}',[App\Http\Controllers\BannerController::class,'edit'])->name('route_banner_edit');
 Route::get('/banner/delete/{id}',[App\Http\Controllers\BannerController::class,'delete'])->name('route_banner_delete');
+// product 
+Route::get('/product',[App\Http\Controllers\productController::class,'product'])->name('product');
+Route::match(['GET','POST'],'/product/add',[App\Http\Controllers\productController::class,'add'])->name('route_product_add');
+Route::match(['GET','POST'],'/product/edit/{id}',[App\Http\Controllers\productController::class,'edit'])->name('route_product_edit');
+Route::get('/product/delete/{id}',[App\Http\Controllers\productController::class,'delete'])->name('route_product_delete');
+// sale
+Route::get('/sale',[App\Http\Controllers\saleController::class,'sale'])->name('sale');
+Route::match(['GET','POST'],'/sale/add',[App\Http\Controllers\SaleController::class,'add'])->name('route_sale_add');
+Route::match(['GET','POST'],'/sale/edit/{id}',[App\Http\Controllers\SaleController::class,'edit'])->name('route_sale_edit');
+Route::get('/sale/delete/{id}',[App\Http\Controllers\SaleController::class,'delete'])->name('route_sale_delete');
