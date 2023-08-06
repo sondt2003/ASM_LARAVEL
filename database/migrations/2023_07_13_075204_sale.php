@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('sale', function (Blueprint $table) {
             $table->id();
-            $table->string('promotion');
+            $table->string('promotion'); // khuyến mãi
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

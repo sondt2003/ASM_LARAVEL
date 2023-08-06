@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('banner', function (Blueprint $table) {
             $table->id();
             $table->string('image');
-            $table->string('prioritize');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

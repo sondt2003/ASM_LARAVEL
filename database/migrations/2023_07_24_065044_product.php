@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedBigInteger('id_category');
-
-            // $table->unsignedBigInteger('id_sale');
+            $table->unsignedBigInteger('id_sale');
 
             $table->integer('price');
             $table->string('image');
@@ -24,8 +23,8 @@ return new class extends Migration
             $table->timestamps();
             
             $table->foreign('id_category')->references('id')->on('category');
-            // $table->foreign('id_sale')->references('id')->on('sale');
-
+            $table->foreign('id_sale')->references('id')->on('sale');
+            $table->softDeletes();
         });
     }
 
